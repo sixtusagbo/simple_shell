@@ -1,5 +1,5 @@
-#ifndef __MAIN_H
-#define __MAIN_H
+#ifndef SHELLH
+#define SHELLH
 
 #define _GNU_SOURCE
 #include <stdio.h>
@@ -43,7 +43,6 @@ int _setenv(char *name, char *val);
 int _unsetenv(char *name);
 char **getallenv(void);
 
-void print_alphabet(void);
 
 /* from utility.c */
 char *itos(int digits);
@@ -101,5 +100,6 @@ void exitcleanup(char **av);
 int _atoi(char *s);
 
 char *_getpid(void);
+
 
 #endif
